@@ -9,7 +9,7 @@ SOURCE_PATH  = source
 INCLUDE_PATH = include
 OBJ_PATH     = obj
 
-CFLAGS     = -fPIC -O3 -I$(INCLUDE_PATH) -DQUEUE_OPT
+CFLAGS     = -fPIC -O3 -I$(INCLUDE_PATH) #-DQUEUE_OPT
 #CFLAGS    = -fPIC -g -I$(INCLUDE_PATH) -D__DEBUG__
 
 LD_CFLAGS  = -shared -lpthread 
