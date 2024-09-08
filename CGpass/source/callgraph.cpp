@@ -95,8 +95,3 @@ char CallGraphPass::ID = 0;
 static RegisterPass<CallGraphPass> X("CGpass", "Call Graph Pass", false, false);
 
 
-static llvm::RegisterStandardPasses Y(
-    llvm::PassManagerBuilder::EP_EarlyAsPossible,
-    [](const llvm::PassManagerBuilder &Builder,
-       llvm::legacy::PassManagerBase &PM) { PM.add(new CallGraphPass()); });
-
