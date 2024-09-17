@@ -13,7 +13,7 @@ NEW_PATH="PATH=\$PATH:/home/security/EDJ-DynamicGen-CS5890-6890/AFLplusplus/"
 if ! grep -q "$NEW_PATH" ~/.bashrc; then
 echo "export $NEW_PATH" | tee -a ~/.bashrc > /dev/null
 else
-echo "Path has already been updated"
+echo "Path has already been updated to include $NEW_PATH"
 fi
 
 
