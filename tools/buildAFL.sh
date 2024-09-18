@@ -17,3 +17,5 @@ echo "Path has already been updated to include $NEW_PATH"
 fi
 
 
+# Reload the .bashrc so the new path is available
+source ~/.bashrc
